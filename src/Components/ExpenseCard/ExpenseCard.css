@@ -1,0 +1,65 @@
+.card-container {
+  z-index: -1;
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem 0.5rem 0rem;
+  width: 100%;
+  margin: 1rem 2rem;
+  background-color: white;
+  border: 2px solid #c3d1ff;
+  border-radius: 1rem;
+}
+
+.amount-text {
+  font-size: 3rem;
+  color: red;
+}
+
+.title-text {
+  font-size: 2.2rem;
+  align-self: center;
+}
+
+.date-box {
+  /* background-color: antiquewhite; */
+  width: 12rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.wrapper {
+  color: #008aa9;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1;
+  /* outline: 1px solid black; */
+}
+
+.day-box {
+  width: 3rem;
+  transform: scaleY(1.3);
+  font-weight: 500;
+  color: #021b79;
+  font-size: 3rem;
+}
+
+.month-box {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.year-box {
+  font-weight: 400;
+  font-size: 2.2rem;
+}

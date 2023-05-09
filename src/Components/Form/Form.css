@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 4rem;
+  margin: 2.2rem;
+  border-radius: 2.6rem;
+  height: 75%;
+  width: 68%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title,
+.form-amount,
+.form-date {
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid black; */
+  margin: 2rem;
+  width: 90%;
+}
+
+.form-btn-container {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+
+input {
+  padding-left: 1rem;
+  font-size: 2rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  border: 1px solid #021b79;
+}
+
+label {
+  font-weight: 400;
+  color: #021b79;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+}
+
+.form-btn {
+  background-color: #021b79;
+  border: none;
+  color: white;
+  margin: 2rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background-color: #001666;
+}
+
+.form-btn:active {
+  cursor: pointer;
+  background-color: #001666;
+  transform: scale(0.97);
+}
+
+.heading-text-container {
+  width: 65%;
+  padding: 1rem;
+}
+
+.heading-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}

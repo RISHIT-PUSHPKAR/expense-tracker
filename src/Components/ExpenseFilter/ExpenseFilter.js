@@ -1,6 +1,4 @@
-// import React, { useState } from "react";
 import "../ExpenseFilter/ExpenseFilter.css";
-// import ExpenseCard from "../ExpenseCard/ExpenseCard";
 
 const ExpenseFilter = (props) => {
   function fnc(event) {
@@ -38,63 +36,36 @@ const ExpenseFilter = (props) => {
         <label id="year" style={{ color: "#021b79", fontWeight: 500 }}>
           Year :{" "}
         </label>
-        <select name="year" id="yearList" className="year-list">
-          <option onClick={fnc} value="2023">
-            2023
-          </option>
-          <option onClick={fnc} value="2024">
-            2024
-          </option>
-          <option onClick={fnc} value="2025">
-            2025
-          </option>
-          <option onClick={fnc} value="2026">
-            2026
-          </option>
+        <select name="year" id="yearList" className="year-list" onChange={fnc}>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
         </select>
       </span>
       <span className="select-month">
         <label id="month" style={{ color: "#021b79", fontWeight: 500 }}>
           Month :{" "}
         </label>
-        <select name="month" id="month" className="month-list">
+        <select
+          name="month"
+          id="month"
+          className="month-list"
+          onChange={monthHandler}
+        >
           {/* {filteredMonthArray.length === 0 && "No Expenses"} */}
-          <option onClick={monthHandler} value="January">
-            January
-          </option>
-          <option onClick={monthHandler} value="March">
-            March
-          </option>
-          <option onClick={monthHandler} value="February">
-            February
-          </option>
-          <option onClick={monthHandler} value="April">
-            April
-          </option>
-          <option onClick={monthHandler} value="May">
-            May
-          </option>
-          <option onClick={monthHandler} value="June">
-            June
-          </option>
-          <option onClick={monthHandler} value="July">
-            July
-          </option>
-          <option onClick={monthHandler} value="August">
-            August
-          </option>
-          <option onClick={monthHandler} value="September">
-            September
-          </option>
-          <option onClick={monthHandler} value="October">
-            October
-          </option>
-          <option onClick={monthHandler} value="November">
-            November
-          </option>
-          <option onClick={monthHandler} value="December">
-            December
-          </option>
+          <option value="January">January</option>
+          <option value="March">March</option>
+          <option value="February">February</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
         </select>
       </span>
       <button type="button" className="sort-btn" onClick={sortHandler}>

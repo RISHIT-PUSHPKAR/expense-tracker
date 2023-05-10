@@ -12,13 +12,13 @@ const ExpenseCard = (props) => {
   return (
     <li className="card-container">
       <div className="card">
-        <p className="date-box">
+        <div className="date-box">
           <div className="day-box">{props.day}</div>
           <div className="wrapper">
             <div className="month-box">{props.month}</div>
             <div className="year-box">{props.year}</div>
           </div>
-        </p>
+        </div>
         <p className="title-text text">{toTitleCase(props.title)}</p>
         <p className="amount-text text">₹{props.amount}</p>
       </div>
